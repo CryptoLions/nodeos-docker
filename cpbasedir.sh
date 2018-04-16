@@ -4,7 +4,7 @@ DIR="basedir"
 #DIR=base.min
 
 for i in {1..1}
-#for i in {1..8}.
+#for i in {1..8}
 do
     if [ ! -d "$i" ]; then
       echo "coppying: $i"
