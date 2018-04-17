@@ -40,7 +40,7 @@ do
     echo -ne $addConfig
 
     if [ ! -d "$i" ]; then
-      echo "coppying: $i"
+      echo -ne "\nCoppying: $i\n"
       cp -R $DIR $i
     fi
     cp $DIR/config.ini $i/config.ini
