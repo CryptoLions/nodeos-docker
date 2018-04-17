@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #################################
 #
-# Created by Eosio.io
+# Created by Eos.io
 # Updated by CryptoLions.io
 #
 ##################################
