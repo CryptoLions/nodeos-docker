@@ -30,10 +30,10 @@ do
     peersSTR=""
     for ((k=0; k<one_grp_c; k++))
     do
-<------>idx=$(($(($i-1))*$one_grp_c+$k))
-<------>peersSTR=$peersSTR"\n"${peers[idx]}
+        idx=$(($(($i-1))*$one_grp_c+$k))
+        peersSTR=$peersSTR"\n"${peers[idx]}
     done
-....
+
 
     addConfig="\n\np2p-server-address = $SERVER_ADDR \n$peersSTR"
 
