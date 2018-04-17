@@ -50,13 +50,9 @@ fi
         $iptables -A INPUT -p udp --dport 7946 -j ACCEPT
         $iptables -A INPUT -p udp --dport 4789 -j ACCEPT
 
-        #nodeos swarm Cluster
+        #nodeos: access to non-producing nodes
         $iptables -A INPUT -p tcp --dport 8888 -j ACCEPT
         $iptables -A INPUT -p tcp --dport 9876 -j ACCEPT
-
-
-        #MongoDB Admin
-        $iptables -A INPUT -p tcp --dport 5000 -j ACCEPT
 
 
         # Allow loopback interface
