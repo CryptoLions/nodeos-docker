@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
-
+#################################
+#
+# Created by Eosio.io
+# Updated by CryptoLions.io
+#
+##################################
 set -x
 
 pid=0
