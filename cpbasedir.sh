@@ -10,15 +10,15 @@
 ###############################################################################
 
 DIR="basedir"
+SERVER_ADDR="0.0.0.0:9876"
+
+#-----------------------------------------
+
 COUNT=$1
 if [ ! $COUNT ]; then
     COUNT=1
 fi
 
-#SERVER_ADDR="dev.cryptolions.io:9876"
-SERVER_ADDR="0.0.0.0:9876"
-echo $COUNT
-exit
 
 readarray peers < $DIR/peerlist.ini
 tot_peers=${#peers[@]}
