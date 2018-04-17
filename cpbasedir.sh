@@ -4,12 +4,21 @@
 # Scrip by http://CryptoLions.io
 # https://github.com/CryptoLions/
 # use peerlist in DIR as source
-# Copy to COUNT Dirs 1..COUNT
+#
+# usage:  sudocpbasedir.sh <num folders>
+#
 ###############################################################################
 
 DIR="basedir"
-COUNT=1
+COUNT=$1
+if [ ! $COUNT ]; then
+    COUNT=1
+fi
+
+#SERVER_ADDR="dev.cryptolions.io:9876"
 SERVER_ADDR="0.0.0.0:9876"
+echo $COUNT
+exit
 
 readarray peers < $DIR/peerlist.ini
 tot_peers=${#peers[@]}
@@ -21,10 +30,10 @@ do
     peersSTR=""
     for ((k=0; k<one_grp_c; k++))
     do
-        idx=$(($(($i-1))*$one_grp_c+$k))
-        peersSTR=$peersSTR"\n"${peers[idx]}
+<------>idx=$(($(($i-1))*$one_grp_c+$k))
+<------>peersSTR=$peersSTR"\n"${peers[idx]}
     done
-
+....
 
     addConfig="\n\np2p-server-address = $SERVER_ADDR \n$peersSTR"
 
