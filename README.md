@@ -8,5 +8,5 @@ cd nodeos-docker
 docker build . -t eosio/eos:v30023a  
 
 
-https://github.com/CryptoLions/
+https://github.com/CryptoLions/  
 http://CryptoLions.io
