@@ -58,7 +58,7 @@ else
     CONFIG_DIR=""
 fi
 
-/opt/eosio/bin/nodeos $CONFIG_DIR > /opt/eosio/bin/data-dir/nodeos_out.log 2> /opt/eosio/bin/data-dir/nodeos_err.log &
+/opt/eosio/bin/nodeos --shared-memory-size-mb 4096 $CONFIG_DIR > /opt/eosio/bin/data-dir/nodeos_out.log 2> /opt/eosio/bin/data-dir/nodeos_err.log &
 
 pid="$!"
 
