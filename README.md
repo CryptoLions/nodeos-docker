@@ -5,7 +5,7 @@ Steemit Post:
 
 git clone https://github.com/CryptoLions/nodeos-docker  
 cd nodeos-docker  
-docker build . -t eosio/eos:v30023a  
+docker build . -t eosio/eos:v30027  
 
 
 https://github.com/CryptoLions/  
