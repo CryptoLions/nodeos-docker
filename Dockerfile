@@ -1,6 +1,6 @@
 FROM eosio/builder as builder
 
-RUN git clone -b DAWN-2018-04-23-ALPHA --depth 1 https://github.com/EOSIO/eos.git --recursive \
+RUN git clone -b DAWN-2018-04-27-ALPHA --depth 1 https://github.com/EOSIO/eos.git --recursive \
     && cd eos \
     && cmake -H. -B"/tmp/build" -GNinja -DCMAKE_BUILD_TYPE=Release -DWASM_ROOT=/opt/wasm -DCMAKE_CXX_COMPILER=clang++ \
        -DCMAKE_C_COMPILER=clang -DCMAKE_INSTALL_PREFIX=/tmp/build  -DSecp256k1_ROOT_DIR=/usr/local \
